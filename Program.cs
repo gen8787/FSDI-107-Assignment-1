@@ -4,7 +4,8 @@ namespace assignment1
 {
     class Program
     {
-        static void Main(string[] args)
+// M A I N
+        private static void Main(string[] args)
         {
             Console.WriteLine("Printing numbers 50 down to 35, EXCEPT 43 and 37.");
 
@@ -15,17 +16,23 @@ namespace assignment1
             p.Print50to35(ReturnFifty, ReturnThirtyFive);
         }
 
-        public static int Return50()
+
+// R E T U R N   5 0
+        private static int Return50()
         {
             return 50;
         }
 
-        public static int Return35()
+
+// R E T U R N   3 5
+        private static int Return35()
         {
             return 35;
         }
 
-        public void Print50to35(int start, int end)
+
+// P R I N T   5 0   T O   3 5
+        private void Print50to35(int start, int end)
         {
             for (int i = start; i >= end; i --)
             {
